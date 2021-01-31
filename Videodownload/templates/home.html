@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="https://img.icons8.com/color/48/000000/download.png" type="image/gif" sizes="16x16">
+	
+{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>A2ZDownloads</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" href="#"><b>A2Z Downloads</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/pinterestvideo">pinterest video</a>
+      </li>
+      
+       <li class="nav-item dropdown active">
+      	 <a class="nav-link" href="/Instagram-download">Instagram download</a>
+      </li>
+
+       <li class="nav-item dropdown active">
+      	 <a class="nav-link" href="/contact">Contact Us</a>
+      </li>
+    </ul>
+
+  </div>
+
+</nav>
+<div class="backgroundphoto" >
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h3 class="display-4.7">Welcome A2Z Download</h3><hr>
+    <p >This website is providing a service to download a video of any stream like youtube and instagram ,vimeo,pinterest,Vimeo,tiktok etc.</p>
+  </div>
+</div>
+
+
+<section class="first-section"  >
+<div class="container" >
+	<center>
+  <div class="row justify-content-md-center" >
+    <div class="col col-lg-2" >
+    <!-- {% for i in adsdata %}
+
+    <div style="color: white"> {{i.Ads1}}</div>
+
+ <div style="color: white"> {{i.Ads2}}</div>
+
+     {% endfor %}-->
+    
+    </div>
+    <center>
+    <div class="col-md-auto" style="">
+ <center>
+	<div class="card" style="width: 38rem;background-color: rgba(255, 0, 0, 0);color: white;">
+  <div class="card-body">
+  <form method="post">
+    {% csrf_token %}
+  <div class="form-group">
+  	<h2>Download All Stream videos</h2>
+  
+    <input type="url" class="form-control" name="url" id="exampleInputEmail1" placeholder="Enter Link" required="enter the link" style="height: 60px;">
+     {% if messages %}
+{% for message in messages %}
+  
+
+  <li style="color: white;" >{{ message }}</li>
+ 
+
+{% endfor %}
+{% endif %}
+  </div>
+
+  <button type="submit" id="signupbtn" class="btn btn-primary btn-block" style="width: 200px;">GO</button>
+</form>
+  </div>
+</div>
+</center>
+    </div>
+    </center>
+    <div class="col col-lg-2">
+
+    </div>
+  </div>
+</center>
+</div>
+</section>
+
+</div>
+
+<section class="secondsection">
+	
+<center><h2 style="padding: 10px;padding-bottom: 50px;">Supported Sites</h2></center>
+<div class="container">
+
+<div class="allplatform">
+  <div class="platform">
+    <div class="data">
+    
+     <img src="https://img.icons8.com/color/70/000000/youtube-squared.png"/>
+    </div>
+  </div>
+
+  <div class="platform">
+    <div class="data">
+     <img src="https://img.icons8.com/color/70/000000/facebook-new.png"/>
+    </div>
+  </div>
+  
+  <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/cute-clipart/70/000000/instagram-new.png"/>
+    </div>
+  </div>
+  
+  <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/color/70/000000/twitter.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/color/70/000000/soundcloud.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/color/70/000000/vimeo.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/ios-filled/70/000000/tiktok.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+    <img src="https://img.icons8.com/color/70/000000/flickr.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/ios-filled/70/000000/tumblr--v2.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/dusk/70/000000/reddit.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+     <img src="https://img.icons8.com/officel/70/000000/bandcamp-button.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/color/70/000000/pinterest.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/color/70/000000/imdb.png"/>
+    </div>
+  </div>
+   <div class="platform">
+    <div class="data">
+      <img src="https://img.icons8.com/android/70/000000/more.png"/>
+    </div>
+  </div> 
+</div>
+</div>
+</section>
+
+<section>
+	<div class="container">
+	<h3>Download & Save Videos</h3>
+	<p>It is quite easy to download public videos. If you have the video link that you wish to download, all you need to do is copy it and then paste it into the input box. After you paste the link, click the download button. You will be able to watch the video and  you want to the downloader for thi site is free to use and no registration is required. Keep save it is free and does not require any software, plugins, and registration.
+
+	HD Video is a video for high-resolution and quality than standard-definition. Still, sometimes you want to watch HD videos offline. This higher-quality video downloader can help you save HD videos to 1080p, even 4K MP4 HD Quality, with no quality loss. Video downloads and converts audio to MP3 format faster and more stable. Free Video Downloader is a free online service. This online video converter allows you to save videos from Dailymotion, Facebook, Twitter, Instagram, Tiktok, Soundcloud, Ok.ru, V Live, Reddit, Imgur, and more.
+
+	It is the best higher-quality video downloader platform which allows users to download their preferred favorite videos, It is a rich-featured and well-designed website that supports multiple format converts. It is the best Video Downloader that is accessible on all Windows operating systems and linux or Mac,iPhone,Android.</p>
+
+<h3>Detailed Steps</h3>
+<p>
+1) Click the share button beneath the video/Copy URL in search bar.<br>
+2) Click copy link option.<br>
+3) Paste the copied URL in the URL field above.<br>
+4) Click download button.<br>
+5) Depending on the type of media video, you will see a download button.<br>
+6) Click the download button to start download.<br></p>
+</div>
+</section>
+
+<section class="footer">
+	<footer>
+	<center><h5 style="color:white;padding-top: 30px;" >Copyright 2020 ©  A2Z Downloads Rights Reserved
+		<a href="/contact" class="contact" >Contact Us</a> </h5></center>
+	</footer>
+</section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+ 

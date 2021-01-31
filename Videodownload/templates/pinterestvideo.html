@@ -1,0 +1,44 @@
+{% extends 'importable.html' %}
+{% block title %} pinterest video {% endblock %}
+{% block body %} 
+<section class="Instagrampost" >
+	
+<center>
+<div class="container" style="display: block;">
+<img src="https://img.icons8.com/color/70/000000/pinterest.png">	
+</div>
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+     
+    </div>
+    <div class="col-md-auto" >
+     <div class="card" style="background-color: rgba(255, 0, 0, 0);">
+     	<h3>pinterest video and Photos</h3>
+  <div class="card-body">
+   		<form method="post" >
+  <div class="form-group">
+  	 {% csrf_token %}
+    
+    <input type="url" class="form-control" name="pinterestlink" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Acount link" style="width: 500px;height: 50px">
+  </div>
+ <center> <button type='submit' class="btn btn-primary btn-block" style="width: 150px;" >Download</button></center>
+</form>
+  </div>
+
+</div>
+
+    </div>
+    <div class="col col-lg-2">
+  
+    </div>
+  </div>
+</center>
+</section>
+
+<section class="container" style="padding-bottom: 60px;" >
+	 
+	
+</section>
+
+
+{% endblock  %}

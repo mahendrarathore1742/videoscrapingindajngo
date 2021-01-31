@@ -1,0 +1,52 @@
+{% extends 'importable.html' %}
+{% block title %} Download and Watch {% endblock %}
+{% block body %} 
+
+{% load static %}
+<section class="Instagrampost" >  
+<center>
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+ 
+    </div>
+    <div class="col-md-auto" >
+     <div class="card" style="background-color: rgba(255, 0, 0, 0);">
+      <h3>Download and Watch</h3><hr>
+  <div class="card-body">
+      
+<iframe  src="{{urls}}" style="width: 700px;height: 400px;border: none;"></iframe>
+
+  </div>
+</div>
+    </div>
+    <div class="col col-lg-2">
+    
+    </div>
+  </div>
+</center>
+
+</section>
+
+<center><h4>How to download</h4></center>
+<div class="row">
+
+  <div class="column">
+
+    <div class="card">
+   <center>  <h5>step 1</h5>
+     <img src="{% static 'images/example1.png' %}" alt="Images" style="width: 350px;"></center> 
+    </div>
+  </div>
+ 
+  <div class="column">
+    <div class="card">
+        <center>  <h5>step 2</h5>
+     <img src="{% static 'images/example2.png' %}" alt="Images" style="width: 350px;"></center> 
+    </div>
+  </div>
+  
+
+</div>
+
+
+{% endblock  %}

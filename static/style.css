@@ -1,0 +1,92 @@
+	*{
+			max-width: 100%;
+			overflow-x: hidden;
+			box-sizing: border-box;
+			font-family: -apple-system,ubuntu,vivo,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+			
+			}
+	body{
+		 background-color: #fafafa;
+		}
+
+		.navbar-dark .navbar-nav .active>.nav-link:hover{	
+			
+			text-decoration: underline;
+
+
+		}
+		.form-control:focus{
+		 border-color: #b2b2b2;
+		background: #fafafa;
+    	-webkit-box-shadow: none;
+    	box-shadow: none;
+		}
+		
+		.platform {
+  			float: left;
+  			width: 14%;
+  			padding: 0 10px;
+  			padding-bottom: 50px;
+			}
+
+		.allplatform {margin: 0 -5px;}
+
+		.allplatform:after {
+ 		 content: "";
+ 		 clear: both;
+		}
+@media screen and (max-width: 500px) {
+  .platform {
+    width: 50%;
+  	padding:5px;
+    margin-bottom: 20px;
+  }
+}
+	.data {
+  	padding: 16px;
+ 	 text-align: center;
+ 	 border: 2px solid red;
+ 	 border-radius: 10px;
+ 	 background-color: white;
+	}
+.secondsection{
+	padding : 10px;
+	padding-top:50px;
+}
+p{
+	font-size: 14px;
+    color: #777;
+    line-height: 200%;
+    font-weight: 300;
+}
+.footer{
+	background-color: red;
+	width: 100%;
+	height: 150px;
+	background: #f44;
+    padding: 25px 0 20px 0;
+}
+ 	.contact{
+ 		color: white;
+ 		text-decoration: none;
+ 	 	}
+ 	 .contact:hover{
+ 	 	color: pink;
+ 	 	text-decoration: none;
+ 	 }
+
+ 	 
+
+ 	.navbar, .backgroundphoto{
+ 	 	background: url('images/background.jpg');
+
+
+ 	 	
+ 	 }
+ 	 .jumbotron{
+ 	 	background-color: rgba(255, 0, 0, 0);
+ 	 	color: white;
+
+ 	 	
+
+ 	 }
